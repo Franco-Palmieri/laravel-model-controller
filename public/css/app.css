@@ -48,6 +48,13 @@ main .container .row .container-card .movie-card img {
 }
 
 main .container .row .container-card .title {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+main .container .row .container-card .date {
+  text-align: center;
   color: white;
 }
 

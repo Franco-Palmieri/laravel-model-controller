@@ -9,6 +9,7 @@
                     <img src="{{$movie->cover}}" alt="">
                 </div>
                 <h2 class="title">{{$movie->title}}</h2>
+                <div class="date">{{$movie->date}}</div>
             </div>
         @endforeach
     </div>
