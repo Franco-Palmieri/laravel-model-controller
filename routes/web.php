@@ -12,5 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//collego la route all'homecontroller
+//@nomefunzione
+//dall'homecontroller collego la pagina view.
 Route::get('/', 'HomeController@index');

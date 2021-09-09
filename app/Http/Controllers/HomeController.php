@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+//collego il movie.php
+use App\Movie;
 
 class HomeController extends Controller
 {
@@ -22,6 +24,9 @@ class HomeController extends Controller
         oppure con compact per semplificare:
         return view('home', compact('dato', 'dato2', 'dato3'));
         */
-        return view ('home');
+        $allMovies = Movie::all();
+        
+        //invio alla home il mio array dei libri senza doverlo spalmare
+        return view('home', compact('allMovies'));
     }
 }
