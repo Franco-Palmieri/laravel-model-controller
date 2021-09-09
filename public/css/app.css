@@ -10,46 +10,45 @@ main {
   padding-top: 50px;
 }
 
-main .container .row .card-movie {
+main .container .row .container-card {
   width: calc(100% / 5);
-  height: 300px;
-  padding: 10px;
+  padding: 5px;
 }
 
-main .container .row .card-movie .foto-container {
+main .container .row .container-card .movie-card {
   width: 100%;
-  height: 250px;
+  height: 300px;
+  overflow: hidden;
   position: relative;
 }
 
-main .container .row .card-movie .foto-container .hover-ciao {
+main .container .row .container-card .movie-card:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.2);
+}
+
+main .container .row .container-card .movie-card:hover .descr {
+  opacity: 1;
+}
+
+main .container .row .container-card .movie-card .descr {
   position: absolute;
-  opacity: 0;
-}
-
-main .container .row .card-movie .foto-container .hover-ciao:hover {
-  opacity: 1;
-}
-
-main .container .row .card-movie .foto-container .cover {
-  width: 100%;
-  height: 100%;
-}
-
-main .container .row .card-movie .foto-container .cover img {
-  opacity: 1;
-  width: 100%;
-  height: 100%;
-}
-
-main .container .row .card-movie .foto-container .cover img:hover {
-  opacity: 0;
-}
-
-main .container .row .card-movie .title {
-  padding-top: 5px;
+  padding: 5px;
+  z-index: 10;
   color: white;
-  font-size: 18px;
+  opacity: 0;
+  width: 100%;
+  font-size: 12px;
+}
+
+main .container .row .container-card .movie-card img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+main .container .row .container-card .title {
+  color: white;
 }
 
 * {
