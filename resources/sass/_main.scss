@@ -1,3 +1,29 @@
 main{
-    color: red;
+   height: calc(100vh - 100px);
+   background-color: rgb(54, 54, 54);
+   padding-top: 50px;
+   .container{
+       .row{
+           .card-movie{
+               width: calc(100% / 5);
+               height: 300px;
+               border: 1px solid red;
+               padding: 10px;
+               text-align: center;
+               .foto-container{
+                   width: 100%;
+                   height: 250px;
+                   img{
+                       width: 100%;
+                       height: 100%;
+                   }
+               }
+               .title{
+                   padding-top: 5px;
+                   color: white;
+                   font-size: 18px;
+               }
+           }
+       }
+   }
 }
